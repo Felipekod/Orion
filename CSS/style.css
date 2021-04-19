@@ -1,0 +1,337 @@
+body header 
+{
+	padding: 20px 0;
+}
+
+.boite
+{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	background: #FEFEFE;
+}
+
+.boite img
+{
+	width: 200px;
+}
+
+.boite h1
+{
+	position: absolute;
+	top: 45px;
+	right: 170px;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-family: 'Kranky', cursive;
+}
+
+.boite nav 
+{
+	position: absolute;
+	top: 150px;
+	right: 150px;
+	
+}
+
+.boite li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+ul li ul 
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 5px 5px 0 0;
+    left: 270px;
+    display: none;
+    background: white;
+}
+
+ul li:hover > ul,
+ul li ul:hover 
+{
+ visibility: visible;
+ opacity: 1;
+ display: block;
+ min-width: 260px;
+ text-align: center;
+ padding-top: 10px;
+ box-shadow: 5px 8px 15px -1px #ccc;
+ height: 80px;
+}
+
+.submenu
+{
+	padding-top: 10px;
+}
+
+ul li ul li 
+{
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+  padding: 50px 0;
+  line-height: 1.4;
+  
+}
+
+nav a 
+{
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+}
+nav a:hover
+{
+	color: #C78C09;
+	text-decoration: underline;
+}
+
+.banner{
+	background: #003057;
+}
+.background {
+	background: linear-gradient(#003057, #FEFEFE);
+}
+
+main img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	height: 400px;
+}
+.about {
+	width: auto;
+	height: 300px;
+	display: block;
+	line-height: 1.5;
+	text-indent: 2em;
+	text-align: justify;
+}
+.about h2{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em;
+	margin: 0px auto;
+	color: #FEFEFE;
+}
+
+.about h2:before{
+	content: "[ ";
+}
+.about h2:after{
+	content: " ]";
+}
+.about p{
+	padding: 0 300px 0 0;
+	color: #FEFEFE;
+	font-size: 20px;
+	position: absolute;
+	width: 450px;
+	left: 650px;
+
+}
+.about img{
+	width: 300px;
+	height: auto;
+	margin: 0 50px 0 300px;
+	float: left;
+	box-shadow: 10px 10px 15px rgb(0 0 0 / 90%);
+}
+.video{
+
+	width: 560px;
+	margin: 50px auto;
+	box-shadow: 10px 10px 15px rgb(0 0 0 / 90%);
+}
+
+/* signes */
+main h1{
+	text-align: center;
+	font-size: 30px;
+}
+
+main h1:before{
+	content: "[  ";
+}
+main h1:after{
+	content: "  ]";
+}
+.signes{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.signes li img{
+	width: 100px;
+	height: auto;
+	padding: 10px 0;
+}
+.signes li{
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	height: 230px;
+	vertical-align: top;
+	margin: 0.5% 1.5%;
+	padding:  20px 10px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	transition: 0.5s;
+
+}
+.signes li:hover{
+	color: #C78C09;
+	border: 2px solid #C78C09;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.9); 
+}
+.signes h2{
+	font-size: 25px;
+	color: grey;
+	font-weight: bold;
+}
+.signes p{
+	font-size: 20px;
+}
+
+/* Caracteristiques  */
+main table{
+	margin: 50px auto; 
+}
+table thead tr{
+	background: #FEFEFE;
+	border-bottom: 5px solid black;
+}
+table thead tr th{
+	width: 130px;
+	height: 40px;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 17px;
+}
+.caracteristiques-lignes td{
+	width: 150px;
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+.caracteristiques-lignes:nth-child(2n){
+	background: lightyellow;
+}
+.caracteristiques-lignes:nth-child(odd){
+	background: #fcdbac;
+}
+.traits-lignes td{
+	width: 250px;
+	height: 70px;
+	vertical-align: middle;
+	text-align: center;
+}
+.traits-lignes:nth-child(2n){
+	background: #c2ede7;
+}
+.traits-lignes:nth-child(odd){
+	background: #9bd4cc;
+}
+
+/* horoscope jour */
+
+.horoscopeJour {
+	margin: auto;
+	height: 800px;
+	padding: 50px 0 50px 0;
+	position: relative;
+	
+}
+
+.horoscopeJour h2 {
+	text-align: center;
+	color: rgb(36, 36, 36);
+	font-size: 30px;
+}
+
+.horoscopeJour p {
+	position: relative;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	color: rgb(36, 36, 36);
+	font-size: 20px;
+	margin-top: 50px;
+	height: auto;
+	width: 400px;
+	
+}
+
+
+/* Forms */
+form{
+	margin: 40px 0;
+}
+
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+.input{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+.checkbox{
+	margin: 20px 0 ;
+}
+
+
+.enviar{
+	margin-top: 40px;
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 0.5s all;
+
+}
+.enviar:hover{
+	background: darkorange;
+	cursor: pointer;
+	transform: scale(1.05);
+	
+}
+
+.contact {
+	margin: 50px auto;
+	width: 60%;
+}
+
+form input{
+	margin: 0 0 15px 0;
+}
+
+form textarea{
+	margin: 0 0 15px 0;
+}
+
+/* Footer */ 
+
+footer
+{
+background: url("../Images/bg.jpg");
+padding: 40px 0;
+height: 200px;
+}
