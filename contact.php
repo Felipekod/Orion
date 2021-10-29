@@ -5,19 +5,19 @@ create_entete_page();
 ?>
 
 <main>
-		<form class="contact">
+		<form class="contact" method="post" action="contactemail.php">
 				
 				<label for="nom">Nom complet</label>
-				<input type="text" id="nomcomplet" class="input" required placeholder="Voulez saisir votre nom complet ici">
+				<input name="txNom" type="text" id="nomcomplet" class="input" required placeholder="Voulez saisir votre nom complet ici">
 
 				<label for="email">Email</label>
-				<input type="email" id="email" class="input" required placeholder="votre@email.com">
+				<input name="txEmail" type="email" id="email" class="input" required placeholder="votre@email.com">
 
 				<label for="telephone">Telephone</label>
-				<input type="tel" id="telephone" class="input" placeholder="(XXX) XXX-XXXX">
+				<input name="txTel" type="tel" id="telephone" class="input" placeholder="(XXX) XXX-XXXX">
 
 				<label for="mensage">Message</label>
-				<textarea id="mensage" cols="70" rows="15" required> </textarea>
+				<textarea name="txMessage" id="mensage" cols="70" rows="15" required> </textarea>
 
 				<fieldset>
 					<legend class="teste" id="teste">Comment préférez vous être contacté?</legend>
@@ -33,11 +33,11 @@ create_entete_page();
 
 				<label class="checkbox"><input type="checkbox" checked> Voulez vous recevoir nos nouveautés par e-mail? </label>
 
-				<input type="submit" value="Envoyer formulaire" class="enviar">
+				<input name="sendMail" type="submit" value="Envoyer formulaire" class="enviar">
 
 			</form>
 	</main>
-    
+
 
 <?php
 create_footer_page();
